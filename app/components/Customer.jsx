@@ -3,9 +3,11 @@ var React = require('react');
 
 var Customer = React.createClass({
   render: function () {
+    var {id, name} = this.props;
+
     return (
       <div>
-        Customer.jsx
+        {id}. {name}
       </div>
     )
   }
