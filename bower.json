@@ -1,0 +1,20 @@
+{
+  "name": "challenge-punch-customer-orders",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "ahza64 <ahza64@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ahza64/challenge-punch-customer-orders",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

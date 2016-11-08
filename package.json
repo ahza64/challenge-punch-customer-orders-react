@@ -1,0 +1,26 @@
+{
+  "name": "challenge-punch-customer-orders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahza64/challenge-punch-customer-orders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahza64/challenge-punch-customer-orders/issues"
+  },
+  "homepage": "https://github.com/ahza64/challenge-punch-customer-orders#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.5",
+    "nodemon": "^1.11.0"
+  }
+}
