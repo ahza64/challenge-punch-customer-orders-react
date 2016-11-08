@@ -3,6 +3,7 @@ var React = require('react');
 var CustomerList = require('CustomerList');
 var Customer = require('Customer');
 var AddCustomer = require('AddCustomer');
+var uuid = require('node-uuid');
 
 
 var CustomerApp = React.createClass({
@@ -10,18 +11,26 @@ var CustomerApp = React.createClass({
     return {
       customers: [
         {
-          id: 1,
+          id: uuid(),
           name: 'Ned Stark'
         },
         {
-          id: 2,
+          id: uuid(),
           name: 'Jon Snow'
         }
       ]
     };
   },
   handleAddCustomer: function (name) {
-    alert('new customer ' + name);
+    this.setState({
+      customers: [
+        ...this.state.customers,
+        {
+          id: uuid(),
+          name: name
+        }
+      ]
+    });
   },
   render: function () {
     var {customers} = this.state;

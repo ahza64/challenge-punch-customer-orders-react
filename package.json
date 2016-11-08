@@ -34,6 +34,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.25.0",
     "jquery": "^3.1.1",
+    "node-uuid": "^1.4.7",
     "script-loader": "^0.7.0",
     "webpack": "^1.13.3"
   }
