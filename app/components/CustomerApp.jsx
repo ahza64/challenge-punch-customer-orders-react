@@ -2,6 +2,7 @@
 var React = require('react');
 var CustomerList = require('CustomerList');
 var Customer = require('Customer');
+var AddCustomer = require('AddCustomer');
 
 
 var CustomerApp = React.createClass({
@@ -19,11 +20,15 @@ var CustomerApp = React.createClass({
       ]
     };
   },
+  handleAddCustomer: function (name) {
+    alert('new customer ' + name);
+  },
   render: function () {
     var {customers} = this.state;
     return (
       <div>
         <CustomerList customers={customers} />
+        <AddCustomer onAddCustomer={this.handleAddCustomer}/>
       </div>
     )
   }
